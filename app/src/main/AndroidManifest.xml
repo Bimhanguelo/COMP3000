@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="live.videosdk.rtc.android.java">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name="live.edunest.rtc.android.java.Common.MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VideoSDKRTC"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="live.edunest.rtc.android.java.chats.Activities.AddSubjectActivity"
+            android:exported="false" />
+        <activity
+            android:name="live.edunest.rtc.android.java.chats.Activities.MainActivityTutor"
+            android:exported="false" />
+        <activity android:name="live.edunest.rtc.android.java.chats.Activities.ImageViewActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDgkWPcH0YfpscYSLaowgQaKIcrG_12BIg" />
+
+        <activity
+            android:name="live.edunest.rtc.android.java.chats.Activities.ChatActivity"
+            android:parentActivityName="live.edunest.rtc.android.java.chats.Activities.MainActivity" />
+        <activity android:name="live.edunest.rtc.android.java.chats.Activities.ProfileActivity" />
+        <activity android:name="live.edunest.rtc.android.java.chats.Fragments.MapActivity" />
+        <activity
+            android:name="live.edunest.rtc.android.java.chats.Activities.MainActivity"
+            android:parentActivityName="live.edunest.rtc.android.java.chats.Activities.MainActivity" />
+        <activity android:name="live.edunest.rtc.android.java.chats.Fragments.MenuActivity" />
+        <activity
+            android:name="live.edunest.rtc.android.java.chats.Activities.FindFriendsActivity"
+            android:parentActivityName="live.edunest.rtc.android.java.chats.Activities.MainActivity" />
+        <activity android:name="live.edunest.rtc.android.java.chats.Activities.PhoneLoginActivity" />
+        <activity android:name="live.edunest.rtc.android.java.chats.Activities.MainActivityFrag" />
+        <activity android:name="live.edunest.rtc.android.java.chats.Activities.GroupChatActivity" />
+        <activity
+            android:name="live.edunest.rtc.android.java.chats.Activities.SettingsActivity"
+            android:parentActivityName="live.edunest.rtc.android.java.chats.Activities.MainActivity" />
+        <activity
+            android:name="live.edunest.rtc.android.java.chats.Activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="live.edunest.rtc.android.java.GroupCall.Activity.GroupCallActivity"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="live.edunest.rtc.android.java.Common.Activity.CreateOrJoinActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="live.edunest.rtc.android.java.OneToOneCall.OneToOneCallActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="notificationTitle"
+            android:value="@string/notificationTitle" />
+        <meta-data
+            android:name="notificationContent"
+            android:value="@string/notificationContent" />
+        <meta-data
+            android:name="notificationIcon"
+            android:resource="@mipmap/ic_launcher_round" />
+    </application>
+
+</manifest>

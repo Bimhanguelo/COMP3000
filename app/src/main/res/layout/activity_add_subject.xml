@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.AddSubjectActivity">
+
+    <!-- Subject Name -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutSubjectName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextSubjectName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Tutor Experience -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutTutorExperience"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/inputLayoutSubjectName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTutorExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tutor Experience (Years)" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Subject Description -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutSubjectDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/inputLayoutTutorExperience"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextSubjectDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject Description" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Subject Category -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutSubjectCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/inputLayoutSubjectDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextSubjectCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject Category" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Tutor Qualifications -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutTutorQualifications"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/inputLayoutSubjectCategory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTutorQualifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tutor Qualifications" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Hourly Rate -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutHourlyRate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/inputLayoutTutorQualifications"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextHourlyRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hourly Rate" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Location -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/inputLayoutHourlyRate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Subject Image -->
+    <ImageView
+        android:id="@+id/imageViewSubjectImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_baseline_arrow_drop_down"
+        app:layout_constraintTop_toBottomOf="@id/inputLayoutLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/buttonSaveSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Subject"
+        app:layout_constraintTop_toBottomOf="@id/imageViewSubjectImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

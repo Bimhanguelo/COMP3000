@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/status_bar_color"
+    android:layout_height="match_parent">
+
+    <!-- Text View with App Color Background -->
+    <TextView
+        android:id="@+id/toptext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="Sign in"
+        android:textColor="@android:color/white" />
+
+    <!-- Tab Layout -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toptext"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/app_color"
+        app:tabSelectedTextColor="@color/app_color"
+        app:tabTextColor="#7C7878"
+        app:tabGravity="fill" />
+
+    <!-- View Pager -->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabLayout" />
+
+</RelativeLayout>

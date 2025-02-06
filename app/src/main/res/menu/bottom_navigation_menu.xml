@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:title="Home"
+        android:fontFamily="@font/quicksand"
+
+        android:icon="@drawable/home" />
+    <item
+        android:fontFamily="@font/quicksand"
+
+        android:id="@+id/menu_settings"
+        android:title="Video"
+        android:icon="@drawable/qr_scan" />
+    <item
+        android:fontFamily="@font/quicksand"
+
+        android:id="@+id/menu_location"
+        android:title="Location"
+        android:icon="@drawable/placeholder" />
+    <item
+        android:fontFamily="@font/quicksand"
+        android:id="@+id/menu_quotes"
+        android:title="Chat"
+        android:icon="@drawable/chatt" />
+</menu>

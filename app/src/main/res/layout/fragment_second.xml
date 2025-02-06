@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/status_bar_color"
+    tools:context=".SignupFragment">
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/app_color"
+        android:text="Sign Up with EduNest "
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:textAllCaps="true"
+        android:layout_marginBottom="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#878484"
+        android:text="or with Email"/>
+
+
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:background="@drawable/rounded_edittext_background"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:hint="Email*"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Choose Password*"
+        android:background="@drawable/rounded_edittext_background"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext_background"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:hint="Choose Username*" />
+
+    <EditText
+        android:id="@+id/birthDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Birth Date*"
+        android:focusable="false"
+        android:background="@drawable/rounded_edittext_background"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:onClick="showDatePickerDialog"/>
+
+    <EditText
+        android:id="@+id/genderEditText"
+        android:background="@drawable/rounded_edittext_background"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Gender"/>
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:backgroundTint="@color/app_color"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
