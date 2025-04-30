@@ -110,7 +110,7 @@ const Register = () => {
                   <button onClick={submitForm} class="btn btn-primary rounded-pill"  type="submit">SIGN UP</button>
                   <hr className='' />
                   <div class="text-center">
-                  <p class="mb-0">Already have an account?</p>
+                  <p class="mb-0">Don't have an account?</p>
                   <Link to='/user-login' className="">Sign in</Link>
                 </div>
                  

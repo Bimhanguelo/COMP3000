@@ -74,7 +74,7 @@ const Header = () => {
               </>
             )}
 
-            <a className="nav-link nav-item" target='__blank' href="http://127.0.0.1:8000/admin/login/?next=/admin/">Admin</a>
+            <a className="nav-link nav-item" target='__blank' href="http://127.0.0.1:8000/admin/">Admin</a>
           </div>
         </div>
       </nav>

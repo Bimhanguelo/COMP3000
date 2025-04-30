@@ -10,7 +10,7 @@ import './style.css'
 import './bootstrap.min.css'
 
 const baseUrl='http://localhost:8000/api'
-const siteUrl='http://localhost:8000'
+const siteUrl='http://localhost:8000/'
 
 const CourseDetail = () => {
 
@@ -307,7 +307,7 @@ const CourseDetail = () => {
                     <p><button type='button' onClick={removeFav} title="Add in your favorite Course list" to='/user-login' className='btn btn-outline-danger btn-sm'><i className='bi bi-heart-fill'></i></button></p>
                 }
                 {userLoginStatus !== 'success' && 
-                    <p><Link to='/user-login' className='btn btn-danger rounded-pill'>Please login to access this course</Link></p>
+                    <p><Link to='/user-login' className='btn btn-danger rounded-pill'>Please login to enjoy this course</Link></p>
                 }
             </div>
         </div>
