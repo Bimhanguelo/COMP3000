@@ -20,3 +20,28 @@ An advanced Learning Management System (LMS) created using Django REST Framework
 - **Django REST Framework:** Robust API backend for managing application logic.  
 - **SQLite3:** Reliable database for storing user and course information.  
 - **JWT Authentication:** Provides secure and efficient user login and registration.
+
+**Project Installation Guide**
+
+# Move to the backend directory
+
+# Set up a virtual environment
+python -m venv venv
+source venv/bin/activate  # For Windows, use: venv\Scripts\activate
+
+# Install required packages
+pip install -r requirements.txt
+
+# Apply database migrations
+python manage.py migrate
+
+# Launch the Django server
+python manage.py runserver
+
+# Switch to the frontend directory
+
+# Install necessary dependencies
+npm install
+
+# Start the React development server
+npm start
