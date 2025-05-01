@@ -1,7 +1,9 @@
-#EduNest (Learning Management System)
+#EduNest (Learning Management System)#
+
 This Learning Management System (LMS) is a robust and feature-packed platform built with Django REST Framework and React.js. It allows students to discover and enroll in a wide range of courses across diverse domains, customized to match their interests. The system features dedicated admin panels for students, teachers, and site administrators, along with student testimonials, category-based course browsing, and numerous tools designed to enrich the overall learning experience.
 
-#Core Features
+#Core Features#
+
 Empowering seamless interaction, learning, and course management for both students and instructors:
 Role-Based Dashboards – Personalized interfaces for students and teachers, each tailored to their specific needs and actions
 Comprehensive Course Management – Create, update, manage, and enroll in courses with ease
