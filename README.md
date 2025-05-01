@@ -1,17 +1,11 @@
 **EduNest (Learning Management System)**
 
-This Learning Management System (LMS) is a robust and feature-packed platform built with Django REST Framework and React.js. It allows students to discover and enroll in a wide range of courses across diverse domains, customized to match their interests. The system features dedicated admin panels for students, teachers, and site administrators, along with student testimonials, category-based course browsing, and numerous tools designed to enrich the overall learning experience.
+An advanced Learning Management System (LMS) created using Django REST Framework and React.js, offering a platform similar to Udemy. It enables students to enroll in a diverse array of courses across various domains. The system includes dedicated admin panels for students, teachers, and the website, along with features like student testimonials, multiple categories, and other robust functionalities.
 
-**Core Features**
-
-Role-Based Dashboards – Personalized interfaces for students and teachers, each tailored to their specific needs and actions
-
-Comprehensive Course Management – Create, update, manage, and enroll in courses with ease
-
-Learning Resources & Assignments – Instructors can share study materials and assign coursework directly through the platform
-
-Real-Time Messaging – Built-in one-on-one chat for direct communication between students and teachers
-
-Secure User Authentication – Robust login and registration system powered by JWT for data protection and access control
-
-Responsive Design – Optimized with Bootstrap to ensure a consistent and intuitive user experience on any device
+**Features Overview:**  
+- **Distinct User Roles:** Tailored dashboards for students and instructors.  
+- **Course Management:** Provides functionality for creating, editing, and enrolling in courses.  
+- **Assignments & Study Resources:** Teachers can upload study materials and assignments seamlessly.  
+- **Real-Time Communication:** Integrated one-on-one chat for students and teachers.  
+- **Secure User Access:** Ensures safe login and registration with JWT authentication.  
+- **Adaptive Design:** Responsive interface crafted using Bootstrap for an optimized user experience.
