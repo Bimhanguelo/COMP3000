@@ -9,3 +9,14 @@ An advanced Learning Management System (LMS) created using Django REST Framework
 - **Real-Time Communication:** Integrated one-on-one chat for students and teachers.  
 - **Secure User Access:** Ensures safe login and registration with JWT authentication.  
 - **Adaptive Design:** Responsive interface crafted using Bootstrap for an optimized user experience.
+
+**Platform Architecture**
+
+**Frontend:**  
+- **React.js:** Component-driven user interface for dynamic and efficient web applications.  
+- **Bootstrap:** Ensures a responsive and contemporary design for seamless user experiences.  
+
+**Backend:**  
+- **Django REST Framework:** Robust API backend for managing application logic.  
+- **SQLite3:** Reliable database for storing user and course information.  
+- **JWT Authentication:** Provides secure and efficient user login and registration.
